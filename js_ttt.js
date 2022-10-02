@@ -8,7 +8,7 @@ window.onload=() => {
      * 
      */
      let game_status = ["", "", "", "", "", "", "", "", ""];
-     let currentP_layer = "X";
+     let currentPlayer = "X";
 
      // wins if 
      /**
@@ -23,7 +23,7 @@ window.onload=() => {
       */
     document.querySelectorAll('.cell').forEach(cell => cell.addEventListener("click", clickedHandler));
      
-    clickedHandler(e){
+    clickedHandler(e) {
         const clicked = e.target;
         const cell_index = parseInt(clicked.getAttribute('cell_index'));
         
